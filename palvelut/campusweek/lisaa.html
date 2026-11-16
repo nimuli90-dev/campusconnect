@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lisää oma merkintä | CampusWeek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lisää oma deadline, jota Moodlessa ei ole.">
+  <meta name="author" content="Nima Däman">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#0E3A5F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="cw-header">
+  <nav aria-label="CampusWeek">
+    <a href="index.html">‹ Peruuta</a>
+    <span class="cw-brand">CampusWeek</span>
+    
+  </nav>
+</header>
+
+<main>
+  <h1>Lisää oma merkintä</h1>
+  <p class="sub">Omat deadlinet, joita Moodlessa ei ole.</p>
+
+  <form action="index.html" method="get" class="form">
+    <p class="field">
+      <label for="nimi">Nimi</label>
+      <input type="text" id="nimi" name="nimi" maxlength="60" placeholder="esim. Tenttiin luku" required>
+    </p>
+    <p class="field">
+      <label for="kurssi">Kurssi (valinnainen)</label>
+      <select id="kurssi" name="kurssi">
+        <option value="">Ei kurssia</option>
+        <option>Ohjelmointi 1</option>
+        <option>Ruotsi</option>
+        <option>Asiakaskokemus ja myynti</option>
+      </select>
+    </p>
+    <div class="field-row">
+      <p class="field">
+        <label for="paiva">Päivä</label>
+        <input type="date" id="paiva" name="paiva" value="2026-11-22" min="2026-11-16" required>
+      </p>
+      <p class="field">
+        <label for="aika">Kellonaika</label>
+        <input type="time" id="aika" name="aika" value="18:00">
+      </p>
+    </div>
+    <p class="check">
+      <input type="checkbox" id="muistutus" name="muistutus">
+      <label for="muistutus">Muistuta 24 h ennen</label>
+    </p>
+    <ul class="actions">
+      <li><button type="submit" class="btn">Tallenna</button></li>
+      <li><a class="btn btn-ghost" href="index.html">Peruuta</a></li>
+    </ul>
+  </form>
+
+  <p class="note">Ensimmäinen versio: sivut näyttävät esimerkkidataa, eivätkä valinnat vielä tallennu.</p>
+</main>
+
+<footer class="cc-footer">
+  <nav aria-label="CampusConnect">
+    <a href="../../index.html"><span class="material-symbols-outlined" aria-hidden="true">home</span>Koti</a>
+    <a href="../../uutiset.html"><span class="material-symbols-outlined" aria-hidden="true">newspaper</span>Uutiset</a>
+    <a href="../../palvelut.html"><span class="material-symbols-outlined" aria-hidden="true">home_repair_service</span>Palvelut</a>
+  </nav>
+</footer>
+
+</body>
+</html>

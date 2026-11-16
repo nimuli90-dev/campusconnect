@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Oma viikko | CampusWeek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CampusWeek näyttää viikon lukkarin ja kaikkien kurssien deadlinet yhdessä näkymässä.">
+  <meta name="author" content="Nima Däman">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#0E3A5F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="cw-header">
+  <nav aria-label="CampusWeek">
+    <a href="../../palvelut.html">‹ Palvelut</a>
+    <span class="cw-brand">CampusWeek</span>
+    <a href="muistutukset.html">Muistutukset</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Oma viikko</h1>
+  <p class="sub">Viikko 47 · 16.–22.11.2026</p>
+
+  <ol class="days" aria-label="Viikon päivät">
+    <li class="today" aria-current="date"><span class="wd">Ma</span> 16</li>
+    <li class="has-deadline"><span class="wd">Ti</span> 17 <span class="sr-only">deadline</span></li>
+    <li><span class="wd">Ke</span> 18</li>
+    <li class="has-deadline"><span class="wd">To</span> 19 <span class="sr-only">deadline</span></li>
+    <li class="has-deadline"><span class="wd">Pe</span> 20 <span class="sr-only">deadline</span></li>
+    <li><span class="wd">La</span> 21</li>
+    <li class="has-deadline"><span class="wd">Su</span> 22 <span class="sr-only">deadline</span></li>
+  </ol>
+
+  <div class="columns">
+    <section aria-labelledby="h-lukkari">
+      <h2 id="h-lukkari">Lukkari tänään</h2>
+      <ul class="cards">
+        <li class="card lesson"><time datetime="17:40">17.40–20.00</time> <span>Ohjelmointi 1 · Teams</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-deadlinet">
+      <h2 id="h-deadlinet">Deadlinet tällä viikolla</h2>
+      <ul class="cards">
+        <li class="card urgent">
+          <a href="tehtava.html" class="card-link">
+            <span class="card-main"><span class="card-title">Harjoitus 4</span><span class="card-meta">Ohjelmointi 1 · <span class="src">Moodle</span></span></span>
+            <span class="card-side"><time datetime="2026-11-17T23:59">ti 17.11. klo 23.59</time><span class="left left-urgent"><strong class="kiire">Kiire</strong> huomenna</span></span>
+          </a>
+        </li>
+        <li class="card">
+          <span class="card-main"><span class="card-title">Essee, 1. versio</span><span class="card-meta">Ruotsi · <span class="src">Moodle</span></span></span>
+          <span class="card-side"><time datetime="2026-11-19T16:00">to 19.11. klo 16.00</time><span class="left">3 pv jäljellä</span></span>
+        </li>
+        <li class="card">
+          <span class="card-main"><span class="card-title">Myyntipuhelun reflektio</span><span class="card-meta">Asiakaskokemus ja myynti · <span class="src">Moodle</span></span></span>
+          <span class="card-side"><time datetime="2026-11-20T23:59">pe 20.11. klo 23.59</time><span class="left">4 pv jäljellä</span></span>
+        </li>
+        <li class="card">
+          <span class="card-main"><span class="card-title">Tenttiin luku</span><span class="card-meta">Ohjelmointi 1 · <span class="src src-own">oma</span></span></span>
+          <span class="card-side"><time datetime="2026-11-22T18:00">su 22.11. klo 18.00</time><span class="left">6 pv jäljellä</span></span>
+        </li>
+      </ul>
+      <p><a class="btn" href="lisaa.html">Lisää oma merkintä</a></p>
+    </section>
+  </div>
+
+  <p class="note">Ensimmäinen versio: sivut näyttävät esimerkkidataa, eivätkä valinnat vielä tallennu.</p>
+</main>
+
+<footer class="cc-footer">
+  <nav aria-label="CampusConnect">
+    <a href="../../index.html"><span class="material-symbols-outlined" aria-hidden="true">home</span>Koti</a>
+    <a href="../../uutiset.html"><span class="material-symbols-outlined" aria-hidden="true">newspaper</span>Uutiset</a>
+    <a href="../../palvelut.html"><span class="material-symbols-outlined" aria-hidden="true">home_repair_service</span>Palvelut</a>
+  </nav>
+</footer>
+
+</body>
+</html>

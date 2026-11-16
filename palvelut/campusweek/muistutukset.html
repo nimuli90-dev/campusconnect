@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Muistutukset | CampusWeek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valitse itse, mistä CampusWeek muistuttaa.">
+  <meta name="author" content="Nima Däman">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#0E3A5F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="cw-header">
+  <nav aria-label="CampusWeek">
+    <a href="index.html">‹ Oma viikko</a>
+    <span class="cw-brand">CampusWeek</span>
+    
+  </nav>
+</header>
+
+<main>
+  <h1>Muistutukset</h1>
+  <p class="sub">Sinä päätät, mistä muistutetaan.</p>
+
+  <form action="index.html" method="get" class="form">
+    <fieldset>
+      <legend>Viikkokooste</legend>
+      <p class="check card">
+        <input type="checkbox" id="kooste" name="kooste" checked>
+        <label for="kooste">Viikkokooste maanantaisin <span class="hint">Yksi sähköposti viikon deadlineista</span></label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Kurssikohtaiset muistutukset</legend>
+      <p class="hint">Ilmoitus 24 h ennen kurssin deadlinea.</p>
+      <p class="check card">
+        <input type="checkbox" id="k1" name="kurssi" value="ohjelmointi1">
+        <label for="k1">Ohjelmointi 1</label>
+      </p>
+      <p class="check card">
+        <input type="checkbox" id="k2" name="kurssi" value="ruotsi">
+        <label for="k2">Ruotsi</label>
+      </p>
+      <p class="check card">
+        <input type="checkbox" id="k3" name="kurssi" value="myynti">
+        <label for="k3">Asiakaskokemus ja myynti</label>
+      </p>
+    </fieldset>
+
+    <ul class="actions">
+      <li><button type="submit" class="btn">Tallenna</button></li>
+    </ul>
+  </form>
+
+  <h2>Tulossa seuraavaan versioon</h2>
+  <ul class="plain">
+    <li>Deadlinet ja lukkari omaan Google- tai Outlook-kalenteriin</li>
+    <li>Muistutus yksittäiselle tehtävälle</li>
+  </ul>
+
+  <p class="note">Ensimmäinen versio: sivut näyttävät esimerkkidataa, eivätkä valinnat vielä tallennu.</p>
+</main>
+
+<footer class="cc-footer">
+  <nav aria-label="CampusConnect">
+    <a href="../../index.html"><span class="material-symbols-outlined" aria-hidden="true">home</span>Koti</a>
+    <a href="../../uutiset.html"><span class="material-symbols-outlined" aria-hidden="true">newspaper</span>Uutiset</a>
+    <a href="../../palvelut.html"><span class="material-symbols-outlined" aria-hidden="true">home_repair_service</span>Palvelut</a>
+  </nav>
+</footer>
+
+</body>
+</html>

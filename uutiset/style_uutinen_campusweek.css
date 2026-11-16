@@ -1,0 +1,176 @@
+/* CampusWeek-uutisen tyylit. Värit ja fontti ovat CampusConnectin mukaiset. */
+
+:root {
+  --color-primary: rgb(0, 121, 194);        /* HH Blue */
+  --color-primary-dark: rgb(0, 90, 150);    /* tummempi sininen linkeille ja painikkeelle */
+  --color-background: rgb(255, 255, 255);   /* valkoinen */
+  --color-surface: rgb(230, 230, 230);      /* harmaa */
+  --color-text: rgb(0, 0, 0);               /* musta */
+  --color-text-muted: rgb(80, 80, 80);      /* tummanharmaa */
+  --color-text-secondary: rgb(255, 255, 255); /* valkoinen */
+}
+
+body {
+  margin: 0;
+  padding-bottom: 80px;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header a {
+  margin-left: 10px;
+  font-size: 3em;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 40px 16px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: var(--color-primary-dark);
+}
+
+h1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+h2 {
+  margin-top: 1.6em;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+.byline {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.lead {
+  font-size: 1.1rem;
+}
+
+.coloraccent {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary-dark);
+}
+
+figure {
+  margin: 16px auto;
+  max-width: 280px;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-surface);
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+blockquote {
+  margin: 16px 0;
+  padding: 5px 20px;
+  border-left: 5px solid var(--color-primary);
+}
+
+blockquote p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+blockquote footer {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 3px solid rgb(223, 0, 110);
+  outline-offset: 2px;
+}
+
+/* CampusConnectin alatunniste */
+.cc-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.cc-footer nav {
+  display: flex;
+  min-height: 55px;
+  padding-top: 5px;
+}
+
+.cc-footer a {
+  flex: 1;
+  color: var(--color-text-secondary);
+  text-align: center;
+  text-decoration: none;
+}
+
+.cc-footer .material-symbols-outlined {
+  display: block;
+}
+
+/* Responsiivisuus: leveällä näytöllä teksti ja kuva rinnakkain */
+@media (min-width: 600px) {
+  .flex-container {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .flex-container div {
+    flex: 1;
+  }
+
+  .flex-container figure {
+    flex: none;
+    width: 240px;
+    margin: 0;
+  }
+}
